@@ -14,7 +14,6 @@
 		982F8E1E5173340AFE4EF0BC4E018FBF /* Pods-MockBalm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B12182F901518315E38009975F8603 /* Pods-MockBalm_Tests-dummy.m */; };
 		991BEAD7CBDE0FDE37A2B7F0CD01118D /* Pods-MockBalm_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3CF7420C99B41FBFE50C0AA80C30D9 /* Pods-MockBalm_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9921C618B316A03B19C6B776E2530EA5 /* Pods-MockBalm_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE5727003DC5CC0F5F7145D4F6B8EB /* Pods-MockBalm_Example-dummy.m */; };
-		AF4B55074B329C0065FA29ECA357FC3F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E27624068630B31E3ECA566B8FB5399 /* ReplaceMe.swift */; };
 		BD9D7D8EE23B4007FFC2D3DD81F8A7FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D1EEB04F207132B8DD8BC7653B5CA4FA /* MockBalm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C233B340764678B80F9C781C9AF2EE /* MockBalm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA7F30B722D62E1700C795C6 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7F30B522D62E1700C795C6 /* Callback.swift */; };
@@ -57,7 +56,6 @@
 		8C66D99EF6A3E583B5EC1C50AEC7C096 /* Pods-MockBalm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockBalm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CBFF1845B7B6D1B2F5C26AB7710AE98 /* MockBalm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MockBalm-prefix.pch"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E27624068630B31E3ECA566B8FB5399 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MockBalm/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		9EDF74160737859360FC57377AD3E2E2 /* Pods-MockBalm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MockBalm_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A22A8A8267DFA8E1041C9390772AB8B8 /* Pods-MockBalm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MockBalm_Tests.modulemap"; sourceTree = "<group>"; };
 		A634C02995A3A38E77F52045B30A0707 /* MockBalm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MockBalm-dummy.m"; sourceTree = "<group>"; };
@@ -167,7 +165,6 @@
 			children = (
 				FA7F30B522D62E1700C795C6 /* Callback.swift */,
 				FA7F30B622D62E1700C795C6 /* Stub.swift */,
-				9E27624068630B31E3ECA566B8FB5399 /* ReplaceMe.swift */,
 				604DD87CDD871F08C0964E453AA0C10D /* Pod */,
 				15C21C12745289C5D754E31C3D0B2C31 /* Support Files */,
 			);
@@ -321,6 +318,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					4CB825C0FB4B3F88B6E888631F0C5AD1 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -328,6 +330,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 3FDC2A9FCD7F0BE3939EC47DEB00351D /* Products */;
@@ -372,7 +375,6 @@
 			files = (
 				0DEF25D5DD4409C802A0849565B1C458 /* MockBalm-dummy.m in Sources */,
 				FA7F30B722D62E1700C795C6 /* Callback.swift in Sources */,
-				AF4B55074B329C0065FA29ECA357FC3F /* ReplaceMe.swift in Sources */,
 				FA7F30B822D62E1700C795C6 /* Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +471,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -723,7 +725,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

@@ -10,17 +10,17 @@
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
 ## Misc
-projectDescription = "appstarter-pod-ios"
+projectDescription = "MockBalm"
 
 ## Xcode
-workspace = "Example/appstarter-pod-ios.xcworkspace"
-testScheme = "appstarter-pod-ios-Example"
+workspace = "Example/MockBalm.xcworkspace"
+testScheme = "MockBalm-Example"
 testDevices = ["iPhone X"]
 xcodeVersion = "~> 10.2"
 version = ""
 
 ## cocoapods
-podSpecPath = "appstarter-pod-ios.podspec"
+podSpecPath = "MockBalm.podspec"
 podFilePath = "./Example"
 
 ## Build
@@ -42,7 +42,7 @@ platform :ios do
 
   desc "Run to release the pod. Test and lint, increment the version in the podspec, push to the repo"
   lane :releaseNewPodVersion do
-      buildDescription = "Releasing #{projectDescription} cocoapod to private repo"
+      buildDescription = "Releasing #{projectDescription} cocoapod to trunk"
       notifyBuildStart
       xcversion(version: xcodeVersion)
       ensureClean(branch: 'develop')
