@@ -1,0 +1,7 @@
+# Overrides of linting rules in the test package
+disabled_rules: # rules that are switched on by default that we don't want to use
+  - function_body_length
+  - vertical_whitespace
+  - unused_optional_binding
+  - file_length
+  - type_name

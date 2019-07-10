@@ -1,0 +1,25 @@
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Example/Pods
+
+disabled_rules: # rules that are switched on by default that we don't want to use
+  - todo
+
+opt_in_rules: # rules that are off by default that we do want to use
+  - implicitly_unwrapped_optional
+
+# configurable rule overrides
+line_length: 150
+identifier_name:
+  excluded:
+    - id
+    - x
+    - y
+    - to
+    - ok
+
+custom_rules:
+  comments_space: # From https://github.com/brandenr/swiftlintconfig
+    name: "Space After Comment"
+    regex: '(^ *//\w+)'
+    message: "There should be a space after //"
+    severity: warning

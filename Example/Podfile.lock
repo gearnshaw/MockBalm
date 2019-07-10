@@ -1,0 +1,16 @@
+PODS:
+  - MockBalm (0.1.0)
+
+DEPENDENCIES:
+  - MockBalm (from `../`)
+
+EXTERNAL SOURCES:
+  MockBalm:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MockBalm: 3b5aa9add06bfe143d108307e7f9a9a16ff81b2f
+
+PODFILE CHECKSUM: eda39f4aa4c2b4bb334815e92e86d13f25db27e1
+
+COCOAPODS: 1.7.1
