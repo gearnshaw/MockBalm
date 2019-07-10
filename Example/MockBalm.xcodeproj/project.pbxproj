@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		00CFA39F2F961437335E4B8B /* Pods_MockBalm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockBalm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14D64CA70002C01183125270 /* MockBalm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MockBalm.podspec; path = ../MockBalm.podspec; sourceTree = "<group>"; };
+		14D64CA70002C01183125270 /* MockBalm.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MockBalm.podspec; path = ../MockBalm.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2025AA345D0A8F9E60F207BE /* Pods_MockBalm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockBalm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		364AC4FA7E083DC8F85E498E /* Pods-MockBalm_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockBalm_Example.debug.xcconfig"; path = "Target Support Files/Pods-MockBalm_Example/Pods-MockBalm_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4DC853B543D61C63CEE0B4BA /* Pods-MockBalm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockBalm_Tests.release.xcconfig"; path = "Target Support Files/Pods-MockBalm_Tests/Pods-MockBalm_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,8 +45,8 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7EAC26ACEC6F8EDEC4F7EA85 /* Pods-MockBalm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockBalm_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MockBalm_Tests/Pods-MockBalm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8EEA23C00844DA966E1B7ED /* Pods-MockBalm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockBalm_Example.release.xcconfig"; path = "Target Support Files/Pods-MockBalm_Example/Pods-MockBalm_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E3EF800B255CBF26BF280712 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		F91017FE67466CA9B277CBEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E3EF800B255CBF26BF280712 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F91017FE67466CA9B277CBEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				7EAC26ACEC6F8EDEC4F7EA85 /* Pods-MockBalm_Tests.debug.xcconfig */,
 				4DC853B543D61C63CEE0B4BA /* Pods-MockBalm_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 622P8V8VHX;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -478,6 +479,7 @@
 			baseConfigurationReference = 364AC4FA7E083DC8F85E498E /* Pods-MockBalm_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 622P8V8VHX;
 				INFOPLIST_FILE = MockBalm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +495,7 @@
 			baseConfigurationReference = B8EEA23C00844DA966E1B7ED /* Pods-MockBalm_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 622P8V8VHX;
 				INFOPLIST_FILE = MockBalm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;

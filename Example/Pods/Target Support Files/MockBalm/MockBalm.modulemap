@@ -1,0 +1,6 @@
+framework module MockBalm {
+  umbrella header "MockBalm-umbrella.h"
+
+  export *
+  module * { export * }
+}
