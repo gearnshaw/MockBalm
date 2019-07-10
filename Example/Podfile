@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MockBalm_Example' do
+  pod 'MockBalm', :path => '../'
+
+  target 'MockBalm_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
