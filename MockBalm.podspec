@@ -34,6 +34,7 @@ It handles calls to asynchronous functions, and it can be used to mock both clas
   s.swift_version = '5.0'
 
   s.source_files = 'MockBalm/Classes/**/*'
+  s.resources = 'MockBalm/Resources/**/*'
   
   # s.resource_bundles = {
   #   'MockBalm' => ['MockBalm/Assets/*.png']
@@ -42,4 +43,5 @@ It handles calls to asynchronous functions, and it can be used to mock both clas
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Sourcery', '~> 0.16'
 end

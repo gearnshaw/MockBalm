@@ -1,0 +1,8 @@
+sources:
+  - ./my_main_target_folder
+  - ./Pods/MockBalm
+templates:
+  include:
+    - ./Pods/MockBalm/MockBalm/Resources/Sourcery/Templates/Test
+output:
+  ./my_test_target-folder/generated

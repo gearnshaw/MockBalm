@@ -17,6 +17,7 @@
 		C7D3FA9236A2EDEA4F6F44C74704A300 /* MockBalm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0375316F49C7014D4A79D762898BFC /* MockBalm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D88FDAA31A0C5BECC3029F3A31CD2F4D /* Pods-MockBalm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B12182F901518315E38009975F8603 /* Pods-MockBalm_Tests-dummy.m */; };
 		E86845065F8F4653928DB53A7A8D64EB /* Pods-MockBalm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDF74160737859360FC57377AD3E2E2 /* Pods-MockBalm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF137A222E0A710006F7949 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF137A122E0A710006F7949 /* AutoMockable.swift */; };
 		FED9CC0A866974AE67C8C9ACB0856699 /* Pods-MockBalm_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3CF7420C99B41FBFE50C0AA80C30D9 /* Pods-MockBalm_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,31 +40,31 @@
 
 /* Begin PBXFileReference section */
 		00AE5727003DC5CC0F5F7145D4F6B8EB /* Pods-MockBalm_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MockBalm_Example-dummy.m"; sourceTree = "<group>"; };
-		115BA5CCBA3A2DC2695494F57012ECAE /* Pods_MockBalm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MockBalm_Tests.framework; path = "Pods-MockBalm_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		115BA5CCBA3A2DC2695494F57012ECAE /* Pods_MockBalm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockBalm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		35B12182F901518315E38009975F8603 /* Pods-MockBalm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MockBalm_Tests-dummy.m"; sourceTree = "<group>"; };
 		37B46E8C6B27F6E8F1F60DBECD10A4D1 /* Pods-MockBalm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockBalm_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3D79B015AF44ECBFFFDBDCAFE716F906 /* Pods-MockBalm_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MockBalm_Example.modulemap"; sourceTree = "<group>"; };
-		428E48B2F197E327DD8B39DB037B1A42 /* MockBalm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MockBalm.framework; path = MockBalm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		428E48B2F197E327DD8B39DB037B1A42 /* MockBalm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockBalm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44AC11438E5ED56E880797DAE7419216 /* MockBalm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MockBalm.modulemap; sourceTree = "<group>"; };
 		5327551D9313FDAEB3D73BFB15680143 /* MockBalm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MockBalm-dummy.m"; sourceTree = "<group>"; };
-		5464D2F581D2CD7F5C40122C68FCB566 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5464D2F581D2CD7F5C40122C68FCB566 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		57F78EFF70867ADDBE7965D7DFA8F7E8 /* Pods-MockBalm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MockBalm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6A4ADA9AB32C3255F816BBA5C2755AEC /* MockBalm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MockBalm.xcconfig; sourceTree = "<group>"; };
 		6B686E4E52018715ABFDCD9DBEC311E6 /* Pods-MockBalm_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockBalm_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6B86E6BCCFA951EC82DA830CD240E6F6 /* MockBalm.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MockBalm.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6B86E6BCCFA951EC82DA830CD240E6F6 /* MockBalm.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MockBalm.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7AA91D6F69AE35C613A4E1FC3BF7F0B3 /* Pods-MockBalm_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MockBalm_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7D3CF7420C99B41FBFE50C0AA80C30D9 /* Pods-MockBalm_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MockBalm_Example-umbrella.h"; sourceTree = "<group>"; };
 		8C66D99EF6A3E583B5EC1C50AEC7C096 /* Pods-MockBalm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockBalm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		919653C1F286551EB5F84D85CC2558B7 /* MockBalm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MockBalm-prefix.pch"; sourceTree = "<group>"; };
 		95CDAF31D218EE5347AB2B967491124F /* Stub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stub.swift; path = MockBalm/Classes/stubs/Stub.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EDF74160737859360FC57377AD3E2E2 /* Pods-MockBalm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MockBalm_Tests-umbrella.h"; sourceTree = "<group>"; };
 		A0F70BB128B4CD4030F4C87F2C498028 /* MockBalm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MockBalm-Info.plist"; sourceTree = "<group>"; };
 		A22A8A8267DFA8E1041C9390772AB8B8 /* Pods-MockBalm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MockBalm_Tests.modulemap"; sourceTree = "<group>"; };
-		A2DAF86214FE4F1DBCC447221AA511B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A2DAF86214FE4F1DBCC447221AA511B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		AA05CD3198C3D26AF8D31AEC864576B6 /* Pods-MockBalm_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockBalm_Example-Info.plist"; sourceTree = "<group>"; };
-		B435317DEB12E5EBB675F8CCDA3E2FE5 /* Pods_MockBalm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MockBalm_Example.framework; path = "Pods-MockBalm_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B435317DEB12E5EBB675F8CCDA3E2FE5 /* Pods_MockBalm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockBalm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6345FF4465098D2082E476D9F49BE46 /* Pods-MockBalm_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockBalm_Tests-Info.plist"; sourceTree = "<group>"; };
 		BCC7449F553E202748413F862B717CBB /* Pods-MockBalm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockBalm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BD5AA338B59A8C84DCA58E768FD331C2 /* Pods-MockBalm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockBalm_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		C3B019DEFE127EAA8DD72394D5B0FE61 /* Callback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callback.swift; path = MockBalm/Classes/stubs/Callback.swift; sourceTree = "<group>"; };
 		D9478867198ED2300CF6A81A453A5E93 /* Pods-MockBalm_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MockBalm_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		DB0375316F49C7014D4A79D762898BFC /* MockBalm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MockBalm-umbrella.h"; sourceTree = "<group>"; };
+		FAF137A122E0A710006F7949 /* AutoMockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoMockable.swift; path = MockBalm/Classes/AutoMockable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		C70E86732C8591BCC9A6CBAD2684BF3B /* MockBalm */ = {
 			isa = PBXGroup;
 			children = (
+				FAF137A122E0A710006F7949 /* AutoMockable.swift */,
 				C3B019DEFE127EAA8DD72394D5B0FE61 /* Callback.swift */,
 				95CDAF31D218EE5347AB2B967491124F /* Stub.swift */,
 				3749AEFBC38C6142D0D0971C303855D4 /* Pod */,
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF137A222E0A710006F7949 /* AutoMockable.swift in Sources */,
 				32AD42C5D4DD90ABF32DB5A4E23886B9 /* Callback.swift in Sources */,
 				014360B4AB7D6C646D906C485F863DE7 /* MockBalm-dummy.m in Sources */,
 				4969F1B1865DD65145C8D896F34548E4 /* Stub.swift in Sources */,
@@ -593,8 +597,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
