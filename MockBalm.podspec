@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MockBalm'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A swift library to minimise boilerplate code in mocks.'
 
 # This description is used to generate tags and improve search results.
