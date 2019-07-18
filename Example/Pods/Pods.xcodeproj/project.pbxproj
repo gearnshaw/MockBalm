@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		014360B4AB7D6C646D906C485F863DE7 /* MockBalm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5327551D9313FDAEB3D73BFB15680143 /* MockBalm-dummy.m */; };
+		32AD42C5D4DD90ABF32DB5A4E23886B9 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B019DEFE127EAA8DD72394D5B0FE61 /* Callback.swift */; };
+		4969F1B1865DD65145C8D896F34548E4 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CDAF31D218EE5347AB2B967491124F /* Stub.swift */; };
+		68C2E68F4CC01819B5084DB1B8195302 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8B47C8BBC3D7A2450DD2DF1BB2016096 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8CAF19D9CFF1095A99214A032E5C81DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C300CC9FA43FEA0435F1C71D723DCBA5 /* Pods-MockBalm_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AE5727003DC5CC0F5F7145D4F6B8EB /* Pods-MockBalm_Example-dummy.m */; };
+		C7D3FA9236A2EDEA4F6F44C74704A300 /* MockBalm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB0375316F49C7014D4A79D762898BFC /* MockBalm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D88FDAA31A0C5BECC3029F3A31CD2F4D /* Pods-MockBalm_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B12182F901518315E38009975F8603 /* Pods-MockBalm_Tests-dummy.m */; };
+		E86845065F8F4653928DB53A7A8D64EB /* Pods-MockBalm_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EDF74160737859360FC57377AD3E2E2 /* Pods-MockBalm_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF137A222E0A710006F7949 /* AutoMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF137A122E0A710006F7949 /* AutoMockable.swift */; };
+		FED9CC0A866974AE67C8C9ACB0856699 /* Pods-MockBalm_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D3CF7420C99B41FBFE50C0AA80C30D9 /* Pods-MockBalm_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B71932213266B6C4934200D6F55DA7CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CB825C0FB4B3F88B6E888631F0C5AD1;
+			remoteInfo = MockBalm;
+		};
+		C89E4CF7772F33CF23FB858516D6C690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E62108819627A273FDF443C0AF740E;
+			remoteInfo = "Pods-MockBalm_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00AE5727003DC5CC0F5F7145D4F6B8EB /* Pods-MockBalm_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MockBalm_Example-dummy.m"; sourceTree = "<group>"; };
+		115BA5CCBA3A2DC2695494F57012ECAE /* Pods_MockBalm_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockBalm_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35B12182F901518315E38009975F8603 /* Pods-MockBalm_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MockBalm_Tests-dummy.m"; sourceTree = "<group>"; };
+		37B46E8C6B27F6E8F1F60DBECD10A4D1 /* Pods-MockBalm_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockBalm_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3D79B015AF44ECBFFFDBDCAFE716F906 /* Pods-MockBalm_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MockBalm_Example.modulemap"; sourceTree = "<group>"; };
+		428E48B2F197E327DD8B39DB037B1A42 /* MockBalm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MockBalm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44AC11438E5ED56E880797DAE7419216 /* MockBalm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MockBalm.modulemap; sourceTree = "<group>"; };
+		5327551D9313FDAEB3D73BFB15680143 /* MockBalm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MockBalm-dummy.m"; sourceTree = "<group>"; };
+		5464D2F581D2CD7F5C40122C68FCB566 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		57F78EFF70867ADDBE7965D7DFA8F7E8 /* Pods-MockBalm_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MockBalm_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A4ADA9AB32C3255F816BBA5C2755AEC /* MockBalm.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MockBalm.xcconfig; sourceTree = "<group>"; };
+		6B686E4E52018715ABFDCD9DBEC311E6 /* Pods-MockBalm_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockBalm_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B86E6BCCFA951EC82DA830CD240E6F6 /* MockBalm.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MockBalm.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7AA91D6F69AE35C613A4E1FC3BF7F0B3 /* Pods-MockBalm_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MockBalm_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7D3CF7420C99B41FBFE50C0AA80C30D9 /* Pods-MockBalm_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MockBalm_Example-umbrella.h"; sourceTree = "<group>"; };
+		8C66D99EF6A3E583B5EC1C50AEC7C096 /* Pods-MockBalm_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockBalm_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		919653C1F286551EB5F84D85CC2558B7 /* MockBalm-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MockBalm-prefix.pch"; sourceTree = "<group>"; };
+		95CDAF31D218EE5347AB2B967491124F /* Stub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stub.swift; path = MockBalm/Classes/stubs/Stub.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EDF74160737859360FC57377AD3E2E2 /* Pods-MockBalm_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MockBalm_Tests-umbrella.h"; sourceTree = "<group>"; };
+		A0F70BB128B4CD4030F4C87F2C498028 /* MockBalm-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MockBalm-Info.plist"; sourceTree = "<group>"; };
+		A22A8A8267DFA8E1041C9390772AB8B8 /* Pods-MockBalm_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MockBalm_Tests.modulemap"; sourceTree = "<group>"; };
+		A2DAF86214FE4F1DBCC447221AA511B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AA05CD3198C3D26AF8D31AEC864576B6 /* Pods-MockBalm_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockBalm_Example-Info.plist"; sourceTree = "<group>"; };
+		B435317DEB12E5EBB675F8CCDA3E2FE5 /* Pods_MockBalm_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockBalm_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6345FF4465098D2082E476D9F49BE46 /* Pods-MockBalm_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockBalm_Tests-Info.plist"; sourceTree = "<group>"; };
+		BCC7449F553E202748413F862B717CBB /* Pods-MockBalm_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MockBalm_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD5AA338B59A8C84DCA58E768FD331C2 /* Pods-MockBalm_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockBalm_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BE5E35582FA8E4CD34626BF602A1AE20 /* Pods-MockBalm_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MockBalm_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C3B019DEFE127EAA8DD72394D5B0FE61 /* Callback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Callback.swift; path = MockBalm/Classes/stubs/Callback.swift; sourceTree = "<group>"; };
+		D9478867198ED2300CF6A81A453A5E93 /* Pods-MockBalm_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MockBalm_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB0375316F49C7014D4A79D762898BFC /* MockBalm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MockBalm-umbrella.h"; sourceTree = "<group>"; };
+		FAF137A122E0A710006F7949 /* AutoMockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AutoMockable.swift; path = MockBalm/Classes/AutoMockable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19331AF00523612201DCFDD4E182A8B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68C2E68F4CC01819B5084DB1B8195302 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADEF72087E1262CDF116C016344240C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAF19D9CFF1095A99214A032E5C81DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C71A011A8E8617C72C288E1396401A32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B47C8BBC3D7A2450DD2DF1BB2016096 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3749AEFBC38C6142D0D0971C303855D4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A2DAF86214FE4F1DBCC447221AA511B6 /* LICENSE */,
+				6B86E6BCCFA951EC82DA830CD240E6F6 /* MockBalm.podspec */,
+				5464D2F581D2CD7F5C40122C68FCB566 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3E4BFDB3FE2D3EF62BAAE9DF10CE1F0F /* Pods-MockBalm_Example */ = {
+			isa = PBXGroup;
+			children = (
+				3D79B015AF44ECBFFFDBDCAFE716F906 /* Pods-MockBalm_Example.modulemap */,
+				D9478867198ED2300CF6A81A453A5E93 /* Pods-MockBalm_Example-acknowledgements.markdown */,
+				6B686E4E52018715ABFDCD9DBEC311E6 /* Pods-MockBalm_Example-acknowledgements.plist */,
+				00AE5727003DC5CC0F5F7145D4F6B8EB /* Pods-MockBalm_Example-dummy.m */,
+				7AA91D6F69AE35C613A4E1FC3BF7F0B3 /* Pods-MockBalm_Example-frameworks.sh */,
+				AA05CD3198C3D26AF8D31AEC864576B6 /* Pods-MockBalm_Example-Info.plist */,
+				7D3CF7420C99B41FBFE50C0AA80C30D9 /* Pods-MockBalm_Example-umbrella.h */,
+				BE5E35582FA8E4CD34626BF602A1AE20 /* Pods-MockBalm_Example.debug.xcconfig */,
+				BD5AA338B59A8C84DCA58E768FD331C2 /* Pods-MockBalm_Example.release.xcconfig */,
+			);
+			name = "Pods-MockBalm_Example";
+			path = "Target Support Files/Pods-MockBalm_Example";
+			sourceTree = "<group>";
+		};
+		3FDC2A9FCD7F0BE3939EC47DEB00351D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428E48B2F197E327DD8B39DB037B1A42 /* MockBalm.framework */,
+				B435317DEB12E5EBB675F8CCDA3E2FE5 /* Pods_MockBalm_Example.framework */,
+				115BA5CCBA3A2DC2695494F57012ECAE /* Pods_MockBalm_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCEB0ECD4181EB6F1EB5688BBE0801BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44AC11438E5ED56E880797DAE7419216 /* MockBalm.modulemap */,
+				6A4ADA9AB32C3255F816BBA5C2755AEC /* MockBalm.xcconfig */,
+				5327551D9313FDAEB3D73BFB15680143 /* MockBalm-dummy.m */,
+				A0F70BB128B4CD4030F4C87F2C498028 /* MockBalm-Info.plist */,
+				919653C1F286551EB5F84D85CC2558B7 /* MockBalm-prefix.pch */,
+				DB0375316F49C7014D4A79D762898BFC /* MockBalm-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MockBalm";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C70E86732C8591BCC9A6CBAD2684BF3B /* MockBalm */ = {
+			isa = PBXGroup;
+			children = (
+				FAF137A122E0A710006F7949 /* AutoMockable.swift */,
+				C3B019DEFE127EAA8DD72394D5B0FE61 /* Callback.swift */,
+				95CDAF31D218EE5347AB2B967491124F /* Stub.swift */,
+				3749AEFBC38C6142D0D0971C303855D4 /* Pod */,
+				BCEB0ECD4181EB6F1EB5688BBE0801BF /* Support Files */,
+			);
+			name = MockBalm;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D733C08DB75199CB0E6DCFAA4CD3A130 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3FDC2A9FCD7F0BE3939EC47DEB00351D /* Products */,
+				FA501EBCB852582E9474D32F9DF22AE9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D733C08DB75199CB0E6DCFAA4CD3A130 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C70E86732C8591BCC9A6CBAD2684BF3B /* MockBalm */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FA501EBCB852582E9474D32F9DF22AE9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E4BFDB3FE2D3EF62BAAE9DF10CE1F0F /* Pods-MockBalm_Example */,
+				FC76A915EAAC893F0A7FE53488D1B947 /* Pods-MockBalm_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FC76A915EAAC893F0A7FE53488D1B947 /* Pods-MockBalm_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A22A8A8267DFA8E1041C9390772AB8B8 /* Pods-MockBalm_Tests.modulemap */,
+				57F78EFF70867ADDBE7965D7DFA8F7E8 /* Pods-MockBalm_Tests-acknowledgements.markdown */,
+				BCC7449F553E202748413F862B717CBB /* Pods-MockBalm_Tests-acknowledgements.plist */,
+				35B12182F901518315E38009975F8603 /* Pods-MockBalm_Tests-dummy.m */,
+				B6345FF4465098D2082E476D9F49BE46 /* Pods-MockBalm_Tests-Info.plist */,
+				9EDF74160737859360FC57377AD3E2E2 /* Pods-MockBalm_Tests-umbrella.h */,
+				8C66D99EF6A3E583B5EC1C50AEC7C096 /* Pods-MockBalm_Tests.debug.xcconfig */,
+				37B46E8C6B27F6E8F1F60DBECD10A4D1 /* Pods-MockBalm_Tests.release.xcconfig */,
+			);
+			name = "Pods-MockBalm_Tests";
+			path = "Target Support Files/Pods-MockBalm_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		19027E935A23323056480BC5569E2409 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED9CC0A866974AE67C8C9ACB0856699 /* Pods-MockBalm_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47267988DDD9F1BF08965F5C04D7EE44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E86845065F8F4653928DB53A7A8D64EB /* Pods-MockBalm_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79FC74E6911C7F4CDC683417FFFFC8A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D3FA9236A2EDEA4F6F44C74704A300 /* MockBalm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4CB825C0FB4B3F88B6E888631F0C5AD1 /* MockBalm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFE68AB2746C7500829650405FD2F12F /* Build configuration list for PBXNativeTarget "MockBalm" */;
+			buildPhases = (
+				79FC74E6911C7F4CDC683417FFFFC8A5 /* Headers */,
+				AB2076C83CB94EAF35068E17330B7DEA /* Sources */,
+				19331AF00523612201DCFDD4E182A8B6 /* Frameworks */,
+				529A6B520BA2EEF0D70643A8F189D57C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MockBalm;
+			productName = MockBalm;
+			productReference = 428E48B2F197E327DD8B39DB037B1A42 /* MockBalm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6CE5D6ACCB0CFC1469090360B2F5CB01 /* Pods-MockBalm_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420C0DB2B80313A4055B1A5A9B54D929 /* Build configuration list for PBXNativeTarget "Pods-MockBalm_Tests" */;
+			buildPhases = (
+				47267988DDD9F1BF08965F5C04D7EE44 /* Headers */,
+				D5CBBA38ABF2D1E3E8A5CF8D6595E5B6 /* Sources */,
+				ADEF72087E1262CDF116C016344240C1 /* Frameworks */,
+				8C7A5D089A187265DF77A8C34A987F6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77E8D55DA65522C4BA3FE2B3F370C0DF /* PBXTargetDependency */,
+			);
+			name = "Pods-MockBalm_Tests";
+			productName = "Pods-MockBalm_Tests";
+			productReference = 115BA5CCBA3A2DC2695494F57012ECAE /* Pods_MockBalm_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87E62108819627A273FDF443C0AF740E /* Pods-MockBalm_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 098CD7C10A0A0D587F529A44C2C4C96A /* Build configuration list for PBXNativeTarget "Pods-MockBalm_Example" */;
+			buildPhases = (
+				19027E935A23323056480BC5569E2409 /* Headers */,
+				13725D3CD22D848234ADB8C88C1ADAF8 /* Sources */,
+				C71A011A8E8617C72C288E1396401A32 /* Frameworks */,
+				92F6902CC4948424CD5A55DDA9A7690A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A20A230F91D1AD876F0065A126B237F /* PBXTargetDependency */,
+			);
+			name = "Pods-MockBalm_Example";
+			productName = "Pods-MockBalm_Example";
+			productReference = B435317DEB12E5EBB675F8CCDA3E2FE5 /* Pods_MockBalm_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3FDC2A9FCD7F0BE3939EC47DEB00351D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CB825C0FB4B3F88B6E888631F0C5AD1 /* MockBalm */,
+				87E62108819627A273FDF443C0AF740E /* Pods-MockBalm_Example */,
+				6CE5D6ACCB0CFC1469090360B2F5CB01 /* Pods-MockBalm_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		529A6B520BA2EEF0D70643A8F189D57C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7A5D089A187265DF77A8C34A987F6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F6902CC4948424CD5A55DDA9A7690A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13725D3CD22D848234ADB8C88C1ADAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C300CC9FA43FEA0435F1C71D723DCBA5 /* Pods-MockBalm_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2076C83CB94EAF35068E17330B7DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF137A222E0A710006F7949 /* AutoMockable.swift in Sources */,
+				32AD42C5D4DD90ABF32DB5A4E23886B9 /* Callback.swift in Sources */,
+				014360B4AB7D6C646D906C485F863DE7 /* MockBalm-dummy.m in Sources */,
+				4969F1B1865DD65145C8D896F34548E4 /* Stub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CBBA38ABF2D1E3E8A5CF8D6595E5B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D88FDAA31A0C5BECC3029F3A31CD2F4D /* Pods-MockBalm_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A20A230F91D1AD876F0065A126B237F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MockBalm;
+			target = 4CB825C0FB4B3F88B6E888631F0C5AD1 /* MockBalm */;
+			targetProxy = B71932213266B6C4934200D6F55DA7CF /* PBXContainerItemProxy */;
+		};
+		77E8D55DA65522C4BA3FE2B3F370C0DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MockBalm_Example";
+			target = 87E62108819627A273FDF443C0AF740E /* Pods-MockBalm_Example */;
+			targetProxy = C89E4CF7772F33CF23FB858516D6C690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C4A8ACD36A52AA920E78D14F69DEF9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A4ADA9AB32C3255F816BBA5C2755AEC /* MockBalm.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MockBalm/MockBalm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MockBalm/MockBalm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MockBalm/MockBalm.modulemap";
+				PRODUCT_MODULE_NAME = MockBalm;
+				PRODUCT_NAME = MockBalm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60410420BA4BA1DA3B0F69D21D9B556C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD5AA338B59A8C84DCA58E768FD331C2 /* Pods-MockBalm_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MockBalm_Example/Pods-MockBalm_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MockBalm_Example/Pods-MockBalm_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B6FE1003F09398DB906299379B89944 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37B46E8C6B27F6E8F1F60DBECD10A4D1 /* Pods-MockBalm_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MockBalm_Tests/Pods-MockBalm_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MockBalm_Tests/Pods-MockBalm_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9EB09A3645262B9AB1AC00B2778A01E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C66D99EF6A3E583B5EC1C50AEC7C096 /* Pods-MockBalm_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MockBalm_Tests/Pods-MockBalm_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MockBalm_Tests/Pods-MockBalm_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B59B1A193EFB7B03E39C75AB5430C5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A4ADA9AB32C3255F816BBA5C2755AEC /* MockBalm.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MockBalm/MockBalm-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MockBalm/MockBalm-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MockBalm/MockBalm.modulemap";
+				PRODUCT_MODULE_NAME = MockBalm;
+				PRODUCT_NAME = MockBalm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E677EEE0E816E5727477D8B7EB5DB8DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5E35582FA8E4CD34626BF602A1AE20 /* Pods-MockBalm_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MockBalm_Example/Pods-MockBalm_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MockBalm_Example/Pods-MockBalm_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		098CD7C10A0A0D587F529A44C2C4C96A /* Build configuration list for PBXNativeTarget "Pods-MockBalm_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E677EEE0E816E5727477D8B7EB5DB8DD /* Debug */,
+				60410420BA4BA1DA3B0F69D21D9B556C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420C0DB2B80313A4055B1A5A9B54D929 /* Build configuration list for PBXNativeTarget "Pods-MockBalm_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB09A3645262B9AB1AC00B2778A01E5 /* Debug */,
+				6B6FE1003F09398DB906299379B89944 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFE68AB2746C7500829650405FD2F12F /* Build configuration list for PBXNativeTarget "MockBalm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59B1A193EFB7B03E39C75AB5430C5FC /* Debug */,
+				0C4A8ACD36A52AA920E78D14F69DEF9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

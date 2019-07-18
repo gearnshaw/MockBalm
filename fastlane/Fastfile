@@ -1,0 +1,159 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+## Misc
+projectDescription = "MockBalm"
+
+## Xcode
+workspace = "Example/MockBalm.xcworkspace"
+testScheme = "MockBalm-Example"
+testDevices = ["iPhone X"]
+xcodeVersion = "~> 10.2"
+version = ""
+
+## cocoapods
+podSpecPath = "MockBalm.podspec"
+podFilePath = "./Example"
+
+## Build
+buildDescription = "Unknown build"
+buildUrl = "Local build"
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Run before submitting for pull request"
+  lane :beforePullRequest do
+      buildDescription = "beforePullRequest"
+      xcversion(version: xcodeVersion)
+      lint
+      tests
+      podLint
+      notifyBuildSuccess
+  end
+
+  desc "Run to release the pod. Test and lint, increment the version in the podspec, push to the repo"
+  lane :releaseNewPodVersion do
+      buildDescription = "Releasing #{projectDescription} cocoapod to trunk"
+      notifyBuildStart
+      xcversion(version: xcodeVersion)
+      ensureClean(branch: 'develop')
+      pods
+      lint
+      tests
+      podLint
+      incrementAndTag
+      push
+      notifyBuildSuccess
+  end
+
+  desc "Run pod install and update the repo if missing pods"
+  lane :pods do
+      cocoapods(podfile: podFilePath, repo_update: true)
+  end
+
+  desc "Push the pod to the repo"
+  lane :push do |values|
+      pod_push
+  end
+
+  desc "Increment the version in the podspec, tag in git, and push the changes"
+  lane :incrementAndTag do
+      # Increment the podspec
+      version = version_bump_podspec
+      git_commit(path: podSpecPath, message: "#vcsignore# Automatic podspec version increment")
+
+      # Add the tag
+      add_git_tag(tag: version)
+
+      # Push the tag and the version bump
+      push_to_git_remote
+  end
+
+  desc "Lint the pod"
+  lane :podLint do
+      pod_lib_lint
+  end
+
+  desc "Lint the project"
+  lane :lint do
+      swiftlint(
+          strict: true,
+          quiet: true
+      )
+  end
+
+  desc "Run project tests"
+  lane :tests do
+      scan(
+          workspace: workspace,
+          devices: testDevices,
+          scheme: testScheme
+      )
+  end
+
+  desc "Ensure that we're on a clean release branch"
+    lane :ensureClean do |values|
+        # Make sure everything is checked in
+        ensure_git_status_clean
+
+        # Make sure we're on a branch called release
+        ensure_git_branch(branch: values[:branch])
+    end
+
+  desc "Send a message to slack to say that the build has started"
+  lane :notifyBuildStart do
+      notifyBuild(
+          success: true,
+          message: "Started: #{buildDescription} - #{buildUrl}"
+      )
+  end
+
+  desc "Send a slack notification to say that the Testflight build was successful"
+  lane :notifyBuildSuccess do
+      notifyBuild(
+          success: true,
+          message: "Successfully finished: #{buildDescription} #{version} - #{buildUrl}"
+      )
+  end
+
+  desc "Send a slack notification to say that the build failed"
+  lane :notifyBuildFailure do
+      notifyBuild(
+          success: false,
+          message: "Failed: #{buildDescription} - #{buildUrl}"
+      )
+  end
+
+  lane :notifyBuild do |values|
+      if is_ci?
+          # Don't do anything if we're on a build server
+      else
+          title = ""
+          if values[:success]
+              title = "Success"
+          else
+              title = "Failure"
+          end
+          notification(
+              title: title,
+              subtitle: "#{projectDescription} fastlane build",
+              message: values[:message]
+          )
+      end
+  end
+
+  desc "Called on error"
+  error do |lane, exception|
+      # Only spam slack from the build server
+      notifyBuildFailure
+  end
+end
