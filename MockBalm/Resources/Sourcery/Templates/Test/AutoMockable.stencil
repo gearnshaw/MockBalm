@@ -7,6 +7,7 @@
 import Foundation
 import CoreData
 import UIKit
+import FirebaseUI
 import MockBalm
 {# Add required imports here #}
 @testable import bookmein
@@ -28,7 +29,7 @@ class Mock{{type.name}}: {{type.name}} {
     typealias Params_{{method.shortName}} = Void
     {% endif %}
     {% if method.returnTypeName.isVoid %}
-    let stub_{{method.shortName}} = Stub<Void, Params_{{method.shortName}}>()
+    let stub_{{method.shortName}} = Stub<Void, Params_{{method.shortName}}>(defaultRetval: Void())
     {% else %}
     let stub_{{method.shortName}} = Stub<{{method.returnTypeName}}, Params_{{method.shortName}}>(defaultRetval: {{method.annotations.mockDefaultRetval}})
     {% endif %}

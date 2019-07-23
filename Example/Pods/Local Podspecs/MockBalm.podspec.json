@@ -1,6 +1,6 @@
 {
   "name": "MockBalm",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "summary": "A swift library to minimise boilerplate code in mocks.",
   "description": "A swift framework to help you minimise boilerplate code needed to create mocks.\n\nIt handles calls to asynchronous functions, and it can be used to mock both classes and protocols.",
   "homepage": "https://github.com/gearnshaw/MockBalm",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/gearnshaw/MockBalm.git",
-    "tag": "0.1.5"
+    "tag": "0.1.6"
   },
   "platforms": {
     "ios": "8.0"
