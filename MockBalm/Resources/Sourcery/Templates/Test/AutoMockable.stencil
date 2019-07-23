@@ -29,9 +29,9 @@ class Mock{{type.name}}: {{type.name}} {
     typealias Params_{{method.shortName}} = Void
     {% endif %}
     {% if method.returnTypeName.isVoid %}
-    let stub_{{method.shortName}} = Stub<Void, Params_{{method.shortName}}>(defaultRetval: Void())
+    let stub_{{method.shortName}} = Stub<Void, Params_{{method.shortName}}>(returnValue: Void())
     {% else %}
-    let stub_{{method.shortName}} = Stub<{{method.returnTypeName}}, Params_{{method.shortName}}>(defaultRetval: {{method.annotations.mockDefaultRetval}})
+    let stub_{{method.shortName}} = Stub<{{method.returnTypeName}}, Params_{{method.shortName}}>(returnValue: {{method.annotations.mockDefaultRetval}})
     {% endif %}
     override func {{method.name}} {% if not method.returnTypeName.isVoid %}-> {{method.returnTypeName}} {% endif %}{
         {% if not method.returnTypeName.isVoid %}return {% endif %}stub_{{method.shortName}}.executeWithoutThrowable(params: (
