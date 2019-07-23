@@ -3,6 +3,8 @@ sources:
   - ./Pods/MockBalm
 templates:
   include:
-    - ./Pods/MockBalm/MockBalm/Resources/Sourcery/Templates/Test
+    - SourceryTemplates/Test
+  exclude:
+    - SourceryTemplates/Test/LocalImports.stencil
 output:
   ./my_test_target-folder/generated

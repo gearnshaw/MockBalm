@@ -20,6 +20,12 @@ it, simply add the following line to your Podfile:
 pod 'MockBalm'
 ```
 
+## Setup
+1. Copy sourcery files into local project. This can be done manually, or using `bundle exec fastlane copyResources` if you are using `appstarter-pod-ios`.
+1. Add a file called `LocalImports.stencil` to the same directory as your copied sourcery files. In this file add any `import` and `@testable import` statements that are needed for the local project
+1. Add a `.sourcery.yml` file to the root of the project. An example can be copied from `/MockBalm/Resources/Sourcery/Config/.sourcery.yml` (don't forget to edit it to work with the specific project)
+
+
 ## Author
 
 gllittler, g_earnshaw@hotmail.com
