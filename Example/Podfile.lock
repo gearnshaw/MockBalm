@@ -1,15 +1,22 @@
 PODS:
-  - MockBalm (0.1.0)
+  - MockBalm (0.1.1):
+    - Sourcery (~> 0.16)
+  - Sourcery (0.16.1)
 
 DEPENDENCIES:
   - MockBalm (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Sourcery
 
 EXTERNAL SOURCES:
   MockBalm:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MockBalm: 5918b531f56fab6394563708b0b93e06f628d736
+  MockBalm: 54b7e38dd3fd9489974c18ba9402ed1ad95f82b1
+  Sourcery: 16779170d35ee204666843b09031f36721a84bcc
 
 PODFILE CHECKSUM: eda39f4aa4c2b4bb334815e92e86d13f25db27e1
 
