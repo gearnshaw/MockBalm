@@ -1,5 +1,5 @@
 PODS:
-  - MockBalm (0.1.2):
+  - MockBalm (0.1.3):
     - Sourcery (~> 0.16)
   - Sourcery (0.16.1)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MockBalm: a45b6f1d4542d53b1ed1e0b1abaf5f377cce0d25
+  MockBalm: db0ffab3134773b110122d3580819e84c993b1d2
   Sourcery: 16779170d35ee204666843b09031f36721a84bcc
 
 PODFILE CHECKSUM: eda39f4aa4c2b4bb334815e92e86d13f25db27e1
